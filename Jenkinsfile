@@ -1,10 +1,5 @@
 pipeline {
-
-    agent {
-        docker {
-            image 'santiluis/jenkinsrelease:1.0.0'
-        }
-    }
+    agent any
 
     stages {
 
@@ -17,7 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo "Compilando aplicación..."'
-                sh 'echo "Docker NO se usa en este entorno (Windows Desktop)"'
             }
         }
 
