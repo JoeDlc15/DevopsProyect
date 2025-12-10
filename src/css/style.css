@@ -1,0 +1,321 @@
+body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: #f4f4f4;
+    margin: 0; 
+    padding: 0; 
+    
+}
+header {
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;     
+    z-index: 1030;   
+    box-shadow: 0 2px 5px rgba(80, 78, 78, 0.1); 
+}
+.navbar-brand img {
+    width: 50px;
+}
+.nav-link {
+    color: #7B3CA6; 
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #B280BF;
+    color: #F9E5FF; 
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    border: none;
+    color: #7B3CA6;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.carousel {
+    margin-top: 35px; /* altura */ 
+    padding-top: 35px;
+}
+.carousel-inner img {
+    width: 100%; 
+    height: 695px; 
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Nosotros .contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+#Nosotros h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#Nosotros .caja {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Nosotros .caja h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#Nosotros .caja p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#Nosotros img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#Nosotros p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+}
+
+#Servicios {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#Servicios h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px; 
+}
+
+.cara {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    backface-visibility: hidden; 
+    transition: transform 0.6s ease;
+}
+
+.frente {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+.frente img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.frente h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.atras {
+    background: #444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta:hover .frente {
+    transform: rotateY(180deg);
+}
+
+.tarjeta:hover .atras {
+    transform: rotateY(360deg);
+}
+
+#Clientes {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#Clientes .titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#Clientes .centro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    
+}
+
+.clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.carr img {
+    width: 200px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.carr img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#Contactanos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info {
+    flex: 1;
+    padding: 10px;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 15px 0; 
+    font-size: 14px; 
+}
+
+
+.footer-contai {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    footer
+    {
+     text-align: center;
+     width: 100%;
+    }
+    body{
+        font-size: 15px;
+    }
+    .clientes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        justify-items: center; 
+        align-items: center; 
+    }
+    .carr img {
+        max-width: 100px;
+        height: auto;
+    }
+    .container
+    {
+         width: 100%;
+    }
+}
