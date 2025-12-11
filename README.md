@@ -6,3 +6,4 @@ Este paquete contiene:
 
 -Limache
 - cesar modificación actual
+- Harold Quiroz - modificacion adicional
