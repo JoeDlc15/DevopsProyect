@@ -68,5 +68,9 @@ pipeline {
         failure {
             echo "Falló el release."
         }
+        always {
+            // PLUS: Limpia el espacio de trabajo al terminar para ahorrar espacio
+            cleanWs()
+        }
     }
 }
